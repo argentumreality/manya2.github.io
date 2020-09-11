@@ -10,6 +10,16 @@
     ></script>
   </head>
   <body>
+    <script>
+	  function isFacebookApp() {
+    var ua = navigator.userAgent || navigator.vendor || window.opera;
+    return (ua.indexOf('Instagram') > -1);
+}
+		  if(isFacebookApp()) {
+			  alert("Для просмотра AR откройте страницу в Safari")
+		  }
+		     
+</script>
     <div>
       <style>
         model-viewer {
